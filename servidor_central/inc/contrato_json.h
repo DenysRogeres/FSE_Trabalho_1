@@ -21,12 +21,9 @@ typedef struct JSONData {
     int estado_saida;
     int presenca;
     int fumaca;
-    int janela01;
-    int janela02;
     int porta;
     int lampada1;
     int lampada2;
-    int lampada_corredor;
     int ar_cond;
     int aspersor;
     unsigned short distribuido_porta;

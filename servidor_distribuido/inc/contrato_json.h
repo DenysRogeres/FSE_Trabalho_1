@@ -37,7 +37,6 @@ typedef struct StateSensor {
     int janela02;
     int lampada1;
     int lampada2;
-    int lampada_corredor;
     int porta;
     int ar_cond;
     int aspersor;

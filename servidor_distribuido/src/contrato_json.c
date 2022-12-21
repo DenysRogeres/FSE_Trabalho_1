@@ -95,7 +95,6 @@ cJSON* buildJson(StateSensor estados, unsigned short porta_servidor_distribuido)
     cJSON* porta = NULL;
     cJSON* lampada1 = NULL;
     cJSON* lampada2 = NULL;
-    cJSON* lampada_corredor = NULL;
     cJSON* ar_cond = NULL;
     cJSON* aspersor = NULL;
     cJSON* distribuido_porta = NULL;
@@ -111,7 +110,6 @@ cJSON* buildJson(StateSensor estados, unsigned short porta_servidor_distribuido)
     porta = cJSON_CreateNumber(estados.porta);
     lampada1 = cJSON_CreateNumber(estados.lampada1);
     lampada2 = cJSON_CreateNumber(estados.lampada2);
-    lampada_corredor = cJSON_CreateNumber(estados.lampada_corredor);
     ar_cond = cJSON_CreateNumber(estados.ar_cond);
     aspersor = cJSON_CreateNumber(estados.aspersor);
     temperatura = cJSON_CreateNumber(estados.temp);
@@ -130,7 +128,6 @@ cJSON* buildJson(StateSensor estados, unsigned short porta_servidor_distribuido)
     cJSON_AddItemToObject(estados_json, "porta", porta);
     cJSON_AddItemToObject(estados_json, "lampada1", lampada1);
     cJSON_AddItemToObject(estados_json, "lampada2", lampada2);
-    cJSON_AddItemToObject(estados_json, "lampada_corredor", lampada_corredor);
     cJSON_AddItemToObject(estados_json, "ar-condicionado", ar_cond);
     cJSON_AddItemToObject(estados_json, "aspersor", aspersor);
     cJSON_AddItemToObject(estados_json, "porta_servidor_distribuido", distribuido_porta);
